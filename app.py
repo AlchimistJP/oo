@@ -17,21 +17,6 @@ st.write(df)
 # Affichage d'un graphique
 import matplotlib.pyplot as plt
 import numpy as np
-# Créer la figure et les axes
-fig1, ax = plt.subplots()
-
-# Tracer la courbe sin(x)
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
-ax.plot(x, y)
-
-# Ajouter des étiquettes et un titre
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_title('Graphique de sin(x)')
-
-# Afficher la figure avec Streamlit
-st.pyplot(fig1)
 
 # Changez le thème
 st.markdown("""<style>body { background-color: #f0f0f0;} </style>""", unsafe_allow_html=True)
